@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      transition: background1s;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function RandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = RandomColor();
+    }
+
+    changeBackgroundColor();
+
+    setInterval(changeBackgroundColor, 1000);
+  </script>
+</body>
+</html>
+
+</body>
+
+</html>
